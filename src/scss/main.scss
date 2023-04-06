@@ -1,0 +1,34 @@
+:root {
+  --color-power: #3a5372;
+  --color-primary: #439a98;
+  --color-complementary: #83fac4;
+  --color-secondary: #fa4436;
+  --color-background: #2d2a2a;
+  --color-background-gray: #d7d7d7;
+  --color-text-black: #000000;
+  --color-text-white: #ffffff;
+}
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  color: var(--color-text-white);
+  background-color: var(--color-background);
+}
+
+figure {
+  padding: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
