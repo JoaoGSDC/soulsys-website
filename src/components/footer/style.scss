@@ -1,17 +1,31 @@
-nav {
+footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 
-  position: fixed;
-  z-index: 10;
+  width: calc(100% - 64px);
+  background-color: var(--color-power);
+  padding: 64px 32px;
 
-  padding: 16px 0px;
+  .footer-figure-container {
+    padding: 10px;
+    height: 120px !important;
 
-  width: 100%;
+    .footer-img-container {
+      height: 100%;
+    }
+  }
+
+  .line {
+    width: 90%;
+    margin: 32px 0px;
+    border-bottom: 2px solid var(--color-primary);
+  }
 
   .menu {
     display: flex;
-    width: 50%;
+    width: 75%;
     align-items: center;
     justify-content: space-between;
 

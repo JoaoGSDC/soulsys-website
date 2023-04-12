@@ -1,0 +1,67 @@
+.container {
+  height: 100%;
+  width: 100%;
+  background-image: url("src/assets/imgs/opacity_bg.png");
+}
+
+.logo-container {
+  margin: 0px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  z-index: 11;
+  left: 64px;
+
+  animation: opacity 1s ease-in-out;
+
+  .logo {
+    width: 90%;
+  }
+}
+
+.figure {
+  height: 100%;
+  margin: 0px;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  right: 0px;
+  z-index: 1;
+
+  animation: slide-in 1s ease-in-out;
+
+  .img {
+    height: 100%;
+  }
+}
+
+.assets-container {
+  margin: 0px;
+  height: 100%;
+
+  .assets {
+    height: 100%;
+    width: 100%;
+    opacity: 0.25;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

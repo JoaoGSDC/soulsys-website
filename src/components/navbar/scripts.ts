@@ -1,5 +1,5 @@
 import component from "../../ts/component"
 
-export default function Contact() {
+export default function Navbar() {
   component.render("navbar")
 }

@@ -1,5 +1,5 @@
 export interface Language {
-  teste: string
+  home: string
   navbar: {
     home: string
     solutions: string

@@ -1,10 +1,30 @@
-import { Language } from "./Language"
-import english from "./en.json"
-import portuguese from "./ptBR.json"
+import axios from "axios"
 
-export default function locales(lang: string = "ptBR", field: any) {
-  const language: Language = lang === "ptBR" ? portuguese : english
+function Locales() {
+  async function loadTranslations(language: string) {
+    const file =
+      language === "en"
+        ? "src/utils/locales/langs/en.json"
+        : "src/utils/locales/langs/ptBR.json"
 
-  // @ts-ignore: Unreachable code error
-  return language[field]
+    await axios
+      .get(file)
+      .then((response) => translatePage(response.data))
+      .catch((error) => console.log(error))
+  }
+
+  function translatePage(translations: any[]) {
+    const elements = document.querySelectorAll('[translate="yes"')
+    elements.forEach((element: any) => {
+      const key = element.dataset.translationKey
+
+      if (key in translations) {
+        element.textContent = translations[key]
+      }
+    })
+  }
+
+  return { loadTranslations }
 }
+
+export default Locales()
