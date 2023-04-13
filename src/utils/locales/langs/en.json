@@ -1,5 +1,14 @@
 {
   "navbar.home": "Home",
   "navbar.solutions": "Solutions",
-  "navbar.contact": "Contact"
+  "navbar.contact": "Contact",
+  "purpose.title": "PURPOSE",
+  "purpose.text": "To reinvent connections through agile and intelligent technological experiences, we develop web software and mobile apps with a focus on performance to boost your business.",
+  "uncomplicatedtechnology.title1": "We are",
+  "uncomplicatedtechnology.title2": "uncomplicated",
+  "uncomplicatedtechnology.title3": "technology",
+  "uncomplicatedtechnology.text": "with humanized service and customizable solutions that reduce bureaucracy with peace of mind and expertise in administrative and operational management.",
+  "businessintelligence.title1": "Business",
+  "businessintelligence.title2": "intelligence",
+  "businessintelligence.text": "Technical expertise in intelligent technologies that give life to systems, software and apps that streamline management and operational controls in a customizable and intuitive way, supporting any type of challenge in an uncomplicated and optimized way."
 }

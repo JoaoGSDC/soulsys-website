@@ -1,5 +1,14 @@
 {
   "navbar.home": "Início",
   "navbar.solutions": "Soluções",
-  "navbar.contact": "Contato"
+  "navbar.contact": "Contato",
+  "purpose.title": "PROPÓSITO",
+  "purpose.text": "Para reinventar conexões através de experiências tecnológicas ágeis e inteligentes, desenvolvemos softwares web e apps mobiles com foco em performance para impulsionar sua empresa.",
+  "uncomplicatedtechnology.title1": "Somos",
+  "uncomplicatedtechnology.title2": "tecnologia",
+  "uncomplicatedtechnology.title3": "descomplicada",
+  "uncomplicatedtechnology.text": "com atendimento humanizado e soluções customizáveis que desburocratizam resultados com tranquilidade e expertise em gestão administrativa e operacional.",
+  "businessintelligence.title1": "Inteligência",
+  "businessintelligence.title2": "em negócios",
+  "businessintelligence.text": "Expertise técnica em tecnologias inteligentes que dão vida a sistemas, software e apps que agilizam gestões e controles operacionais de forma customizável e intuitiva, comportando qualquer tipo de desafio de maneira descomplicada e otimizada."
 }

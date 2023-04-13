@@ -1,56 +1,15 @@
+@import url("./global.scss");
+
 @import url("../components/navbar/style.scss");
 @import url("../components/footer/style.scss");
+
 @import url("../html/home/style.scss");
 @import url("../html/purpose/style.scss");
-
-:root {
-  --color-power: #3a5372;
-  --color-primary: #439a98;
-  --color-complementary: #83fac4;
-  --color-secondary: #fa4436;
-  --color-background: #2d2a2a;
-  --color-background-gray: #d7d7d7;
-  --color-text-black: #000000;
-  --color-text-white: #ffffff;
-}
-
-html,
-body {
-  margin: 0px;
-  padding: 0px;
-}
-
-body {
-  font-family: Raleway, sans-serif;
-  letter-spacing: 0.1em;
-
-  color: var(--color-text-white);
-  background-color: var(--color-background);
-  overflow-x: hidden;
-}
-
-figure {
-  padding: 0px;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0px;
-  font-family: Montserrat, sans-serif;
-}
-
-section {
-  height: 100vh;
-}
-
-#shadow-host-companion {
-  height: auto !important;
-}
-
-a {
-  text-decoration: none;
-}
+@import url("../html/uncomplicated-technology/style.scss");
+@import url("../html/business-intelligence/style.scss");
+@import url("../html/web-solution/style.scss");
+@import url("../html/mobile-solution/style.scss");
+@import url("../html/protheus-consultancy/style.scss");
+@import url("../html/web-mobile-erp/style.scss");
+@import url("../html/clients/style.scss");
+@import url("../html/contact/style.scss");
