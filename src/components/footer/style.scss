@@ -8,28 +8,28 @@ footer {
   background-color: var(--color-power);
   padding: 64px 32px;
 
-  .footer-figure-container {
+  .footer__figure_container {
     padding: 10px;
     height: 120px !important;
 
-    .footer-img-container {
+    .footer__figure_img {
       height: 100%;
     }
   }
 
-  .line {
+  .footer__line {
     width: 90%;
     margin: 32px 0px;
     border-bottom: 2px solid var(--color-primary);
   }
 
-  .menu {
+  .footer__menu {
     display: flex;
     width: 75%;
     align-items: center;
     justify-content: space-between;
 
-    .option {
+    .footer__menu_option {
       cursor: pointer;
       margin-right: 16px;
       transition: 0.2s;
@@ -40,7 +40,7 @@ footer {
     }
   }
 
-  .social-media {
+  .footer__socialmedia {
     width: 32px;
     height: 32px;
     transition: 0.2s;

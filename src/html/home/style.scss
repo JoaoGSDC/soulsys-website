@@ -1,10 +1,10 @@
-.container {
+.home__container {
   height: 100%;
   width: 100%;
   background-image: url("src/assets/imgs/opacity_bg.png");
 }
 
-.logo-container {
+.home__logo_container {
   margin: 0px;
   position: absolute;
   top: 50%;
@@ -16,12 +16,12 @@
 
   animation: opacity 1s ease-in-out;
 
-  .logo {
+  .home__logo_container_img {
     width: 90%;
   }
 }
 
-.figure {
+.home__figure_container {
   height: 100%;
   margin: 0px;
   display: flex;
@@ -32,16 +32,16 @@
 
   animation: slide-in 1s ease-in-out;
 
-  .img {
+  .home__figure_container_img {
     height: 100%;
   }
 }
 
-.assets-container {
+.home__assets_container {
   margin: 0px;
   height: 100%;
 
-  .assets {
+  .home__assets_container_img {
     height: 100%;
     width: 100%;
     opacity: 0.25;
