@@ -14,13 +14,19 @@
   display: flex;
   height: fit-content;
   width: 100%;
+  flex-direction: row;
+}
+
+.web-mobile-erp__texts {
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  padding-left: 64px;
 }
 
 .web-mobile-erp__title_container {
   display: flex;
-  width: 50%;
-  justify-content: center;
   align-items: center;
 
   position: relative;
@@ -36,14 +42,72 @@
 .web-mobile-erp__text_container {
   display: flex;
   flex-direction: column;
-  width: 100%;
   justify-content: center;
+  width: 75%;
 
   .web-mobile-erp__text_container_value {
-    width: 30%;
     margin: 0px;
     font-size: 1.5rem;
     color: var(--color-complementary);
+  }
+}
+
+.web-mobile-erp__technologies-container {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  width: 50%;
+  margin-right: 64px;
+
+  .web-mobile-erp__technologies-container_title {
+    font-weight: 900;
+    padding-top: 16px;
+    padding-left: 32px;
+    background-image: linear-gradient(to left, transparent, #83fac475);
+  }
+
+  .web-mobile-erp__technologies-container_content {
+    display: flex;
+    padding-bottom: 16px;
+    background-image: linear-gradient(to left, transparent, #83fac475);
+  }
+
+  .web-mobile-erp__technologies-container_content-dark {
+    background-image: linear-gradient(
+      to left,
+      transparent,
+      #439a987a
+    ) !important;
+  }
+
+  .web-mobile-erp__technologies-container_img-footer-title {
+    display: flex;
+    justify-content: center;
+  }
+
+  .web-mobile-erp__technologies-figure {
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+
+    .web-mobile-erp__technologies-img {
+      width: 100%;
+    }
+  }
+
+  .web-mobile-erp__technologies-informations {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    margin-top: 32px;
+
+    .web-mobile-erp__technologies-informations-text {
+      flex: 1 0 40%;
+      font-style: italic;
+      height: 48px;
+    }
   }
 }
 
@@ -55,6 +119,8 @@
   width: 25%;
   display: flex;
   justify-content: flex-end;
+
+  border-bottom: 1px solid var(--color-complementary);
 
   .web-mobile-erp_smile_container_figure {
     height: 48px;
