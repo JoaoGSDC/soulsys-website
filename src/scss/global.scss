@@ -13,6 +13,9 @@ html,
 body {
   margin: 0px;
   padding: 0px;
+
+  width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -48,4 +51,11 @@ section {
 
 a {
   text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  section {
+    overflow: hidden;
+    position: relative;
+  }
 }

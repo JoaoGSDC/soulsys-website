@@ -83,3 +83,23 @@
     }
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .business-intelligence__content {
+    margin-left: 16px;
+  }
+
+  .business-intelligence__title_container {
+    z-index: 2;
+    margin-bottom: 16px;
+
+    .business-intelligence__title_container_size_big {
+      font-size: 3rem !important;
+    }
+  }
+
+  .business-intelligence__text_container_value {
+    width: 100% !important;
+    font-size: 1.25rem !important;
+  }
+}

@@ -48,6 +48,16 @@
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .home__figure_container {
+    right: -172px;
+  }
+
+  .home__logo_container {
+    left: 0px;
+  }
+}
+
 @keyframes slide-in {
   0% {
     transform: translateX(100%);

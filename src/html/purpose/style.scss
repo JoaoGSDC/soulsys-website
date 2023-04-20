@@ -86,3 +86,37 @@
     }
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .purpose__content {
+    flex-direction: column;
+    width: calc(100% - 32px);
+    margin-left: 16px;
+  }
+
+  .purpose__title_container_size_big {
+    font-size: 3rem !important;
+  }
+
+  .purpose__title_container_size_big_effect {
+    font-size: 3rem !important;
+  }
+
+  .purpose__title_container {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 16px;
+  }
+
+  .purpose__text_container {
+    width: 100%;
+  }
+
+  .purpose__title_container_effect {
+    width: 100%;
+  }
+
+  .purpose__text_container_value {
+    width: 100% !important;
+  }
+}
