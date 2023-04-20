@@ -10,7 +10,7 @@ footer {
 
   .footer__figure_container {
     padding: 10px;
-    height: 120px !important;
+    height: 120px;
 
     .footer__figure_img {
       height: 100%;
@@ -52,5 +52,21 @@ footer {
     &:hover {
       opacity: 0.75;
     }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .footer__line {
+    margin-bottom: 16px !important;
+  }
+
+  .footer__menu {
+    flex-direction: column;
+    width: 100% !important;
+    line-height: 32px;
+  }
+
+  .footer__figure_container {
+    height: 80px !important;
   }
 }

@@ -132,19 +132,31 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .web-solution__content {
+  .web-mobile-erp__content {
+    flex-direction: column;
+  }
+
+  .web-mobile-erp__texts {
+    width: calc(100% - 32px) !important;
+    padding-left: 0px !important;
     margin-left: 16px;
   }
 
-  .web-solution__title_container_size_big {
+  .web-mobile-erp__title_container_size_big {
     font-size: 3rem !important;
+    margin-top: 16px;
   }
 
-  .web-solution__text_container_value {
-    width: 100% !important;
+  .web-mobile-erp__text_container {
+    width: 100%;
   }
 
-  .web-solution__browser-container {
-    display: none;
+  .web-mobile-erp__technologies-container {
+    width: 75%;
+    margin-top: 16px;
+  }
+
+  .web-mobile-erp_smile_container {
+    right: 8px !important;
   }
 }

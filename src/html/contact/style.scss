@@ -94,3 +94,37 @@
     height: 100%;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .contact__container {
+    flex-direction: column;
+  }
+
+  .contact__content {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .contact__title_texts {
+    margin-top: -48px;
+  }
+
+  .contact__title_container_size_big {
+    font-size: 3rem !important;
+    margin-left: 0px !important;
+  }
+
+  .contact__text_container {
+    margin-top: calc(25% + 16px);
+  }
+
+  .contact__text:first-child {
+    font-size: 1rem !important;
+  }
+
+  .contact_smile_figure {
+    margin: 0px;
+    height: 25%;
+    top: 50%;
+  }
+}

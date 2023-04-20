@@ -98,3 +98,31 @@
     height: 100%;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .mobile-solution_content_texts {
+    width: 75% !important;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .mobile-solution__figure-mobile-container {
+    margin-left: 0px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .mobile-solution__title_container_size_big {
+    font-size: 3rem !important;
+  }
+
+  .mobile-solution__text_container {
+    width: 100%;
+
+    .mobile-solution__text_container_value {
+      width: 100%;
+    }
+  }
+}

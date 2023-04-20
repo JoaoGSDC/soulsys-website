@@ -98,3 +98,27 @@
     }
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .clients__container {
+    align-items: flex-start;
+    flex-direction: column;
+
+    .clients__content {
+      width: 100%;
+      margin-left: 0px;
+
+      .clients__title_container_size_big {
+        font-size: 2rem !important;
+      }
+    }
+  }
+
+  .clients__imgs-container {
+    width: auto;
+
+    .clients__imgs-container_figure {
+      height: 72px;
+    }
+  }
+}
