@@ -2,20 +2,16 @@ import section from "../../ts/section"
 
 export default function Home() {
   function handleListenerScrollEvent() {
-    const navbar: any = document.getElementById("navbar")
-    const logo: any = document.getElementById("logocontainer")
-
     window.addEventListener("scroll", () => {
-      if (window.pageYOffset > logo.offsetHeight) {
-        logo.classList.add("fixed")
-        logo.style.top = navbar.offsetHeight + "px"
-      } else {
-        logo.classList.remove("fixed")
-        logo.style.top = ""
-      }
+      let scrollPosition = window.scrollY
+      let image = document.getElementById("logocontainer") as HTMLElement
+      let imageHeight = image.offsetHeight
+      let windowHeight = window.innerHeight
+      let distanceFromTop = image.offsetTop - scrollPosition
+      let percentage = 1 - distanceFromTop / (windowHeight + imageHeight)
+      image.style.transform = "scale(" + percentage + ")"
     })
   }
 
-  handleListenerScrollEvent()
   section.render("home")
 }
