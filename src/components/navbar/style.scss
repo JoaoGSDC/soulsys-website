@@ -36,6 +36,7 @@ nav {
     }
 
     &:hover {
+      cursor: pointer;
       opacity: 0.75;
     }
   }
@@ -47,6 +48,15 @@ nav {
 
 .navbar__button-menu {
   display: none;
+}
+
+.navbar__language-button {
+  position: relative;
+}
+
+.navbar__current-language {
+  font-size: 0.5rem;
+  margin-left: -16px;
 }
 
 @media only screen and (max-width: 600px) {
