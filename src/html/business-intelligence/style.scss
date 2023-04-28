@@ -29,6 +29,9 @@
       font-weight: 900;
       color: var(--color-power);
       font-size: 5rem;
+      width: fit-content;
+
+      animation: business-intelligence__animation_text 1s ease-in-out;
     }
   }
 
@@ -54,10 +57,13 @@
   display: flex;
   align-items: center;
 
+  animation: business-intelligence__figure 1s ease-in-out;
+
   .business-intelligence__struct-img__container_figure {
     height: calc(100vh - 200px);
     margin: 0px;
     margin-left: -25%;
+    animation: business-intelligence__figure 1.5s ease-in-out;
 
     .business-intelligence__struct-img__container_img {
       height: 100%;
@@ -81,6 +87,26 @@
     .business-intelligence_smile_container_img {
       height: 100%;
     }
+  }
+}
+
+@keyframes business-intelligence__animation_text {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes business-intelligence__figure {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0%);
   }
 }
 

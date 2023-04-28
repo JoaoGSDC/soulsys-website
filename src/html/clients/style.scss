@@ -35,11 +35,18 @@
 
     border-radius: 50%;
 
+    .clients__title_container_content {
+      z-index: 1;
+    }
+
     .clients__title_container_size_big {
       font-weight: 900;
       color: var(--color-complementary);
       font-size: 3rem;
       text-align: left;
+      width: fit-content;
+
+      animation: clients__animation_title_container_size_big 1s ease-in-out;
     }
 
     &:before {
@@ -74,8 +81,11 @@
     margin-right: 16px;
     margin-bottom: 8px;
 
+    animation: opacity 1s ease-in-out;
+
     .clients__imgs-container_figure_img {
       width: 100%;
+      filter: brightness(0.1);
     }
   }
 }
@@ -96,6 +106,16 @@
     .clients_smile_container_img {
       height: 100%;
     }
+  }
+}
+
+@keyframes clients__animation_title_container_size_big {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%);
   }
 }
 

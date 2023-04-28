@@ -9,6 +9,25 @@
 
   background-color: var(--color-primary);
   background-image: url("src/assets/imgs/assets_effect.png");
+
+  &:before {
+    content: "PROTHEUS PROTHEUS PROTHEUS PROTHEUS";
+    font-size: 10rem;
+    position: absolute;
+    font-weight: 900;
+    font-family: Montserrat, sans-serif;
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    mix-blend-mode: difference;
+    -webkit-text-stroke: 1px #ffb6b1;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -40px;
+    z-index: 0;
+    opacity: 0.1;
+
+    animation: protheus-consultancy__animation_before 1s ease-in-out;
+  }
 }
 
 .protheus-consultancy__content {
@@ -32,6 +51,8 @@
     font-weight: 900;
     color: var(--color-complementary);
     font-size: 7rem;
+
+    animation: protheus-consultancy__animation_text 1s ease-in-out;
   }
 }
 
@@ -46,6 +67,8 @@
     margin: 0px;
     font-size: 1.5rem;
     color: var(--color-text-white);
+
+    animation: protheus-consultancy__animation_text 1.25s ease-in-out;
   }
 }
 
@@ -64,6 +87,26 @@
     .protheus-consultancy_smile_container_img {
       height: 100%;
     }
+  }
+}
+
+@keyframes protheus-consultancy__animation_text {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes protheus-consultancy__animation_before {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0.1;
   }
 }
 

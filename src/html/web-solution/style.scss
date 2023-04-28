@@ -55,12 +55,15 @@
   width: 85%;
   justify-content: center;
   align-items: flex-end;
+  z-index: 1;
 
   .web-solution__text_container_value {
     width: 30%;
     margin: 0px;
     font-size: 1.5rem;
     color: var(--color-text-white);
+
+    animation: web-solution__animation_text_container_value 1s ease-in-out;
   }
 }
 
@@ -97,6 +100,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  animation: opacity 1s ease-in-out;
 
   .web-solution__browser-container_bullets-container {
     display: flex;
@@ -153,6 +158,16 @@
       margin-left: 64px;
       justify-content: center;
     }
+  }
+}
+
+@keyframes web-solution__animation_text_container_value {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0%);
   }
 }
 

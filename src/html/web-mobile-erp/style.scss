@@ -36,6 +36,8 @@
     font-weight: 900;
     color: var(--color-primary);
     font-size: 7rem;
+
+    animation: web-mobile-erp__animation_text 1s ease-in-out;
   }
 }
 
@@ -49,6 +51,8 @@
     margin: 0px;
     font-size: 1.5rem;
     color: var(--color-complementary);
+
+    animation: web-mobile-erp__animation_text 1.25s ease-in-out;
   }
 }
 
@@ -70,6 +74,9 @@
     display: flex;
     padding-bottom: 16px;
     background-image: linear-gradient(to left, transparent, #83fac475);
+
+    animation: web-mobile-erp__animation_technologies-container_content 1.25s
+      ease-in-out;
   }
 
   .web-mobile-erp__technologies-container_content-dark {
@@ -78,6 +85,9 @@
       transparent,
       #439a987a
     ) !important;
+
+    animation: web-mobile-erp__animation_technologies-container_content 1.5s
+      ease-in-out;
   }
 
   .web-mobile-erp__technologies-container_img-footer-title {
@@ -128,6 +138,26 @@
     .web-mobile-erp_smile_container_img {
       height: 100%;
     }
+  }
+}
+
+@keyframes web-mobile-erp__animation_text {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes web-mobile-erp__animation_technologies-container_content {
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(0%);
   }
 }
 

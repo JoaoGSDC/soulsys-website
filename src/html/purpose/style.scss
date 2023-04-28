@@ -41,6 +41,8 @@
     font-weight: 900;
     color: var(--color-power);
     font-size: 5rem;
+
+    animation: purpose__animation_title_container_size_big 1s ease-in-out;
   }
 
   .purpose__title_container_size_big_effect {
@@ -52,6 +54,8 @@
     text-stroke: 0.5px #b9b9b9;
     background-color: transparent;
     mix-blend-mode: difference;
+
+    animation: purpose__animation_title_container_size_big 1s ease-in-out;
   }
 }
 
@@ -65,6 +69,8 @@
     margin: 0px;
     font-size: 1.5rem;
     color: var(--color-text-black);
+
+    animation: purpose___animation_text_container_value 1s ease-in-out;
   }
 }
 
@@ -84,6 +90,26 @@
     .purpose_smile_container_img {
       height: 100%;
     }
+  }
+}
+
+@keyframes purpose__animation_title_container_size_big {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes purpose___animation_text_container_value {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0%);
   }
 }
 

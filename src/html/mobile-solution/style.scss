@@ -67,6 +67,8 @@
     margin: 0px;
     font-size: 1.5rem;
     color: var(--color-text-black);
+
+    animation: mobile-solution__animation_text_container_value 1s ease-in-out;
   }
 }
 
@@ -94,8 +96,30 @@
   margin-left: -15%;
   z-index: 1;
 
+  animation: mobile-solution__animation_figure-mobile-container 1s ease-in-out;
+
   .mobile-solution__figure-mobile-container_img {
     height: 100%;
+  }
+}
+
+@keyframes mobile-solution__animation_text_container_value {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes mobile-solution__animation_figure-mobile-container {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0%);
   }
 }
 
