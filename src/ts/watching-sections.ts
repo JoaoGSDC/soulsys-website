@@ -2,8 +2,6 @@ export function watchSections(activeClassName: string, tagToAnimate: string) {
   setTimeout(() => {
     const animatedSections = document.querySelectorAll(tagToAnimate)
 
-    console.log(animatedSections)
-
     const options = {
       threshold: 0.5,
     }
