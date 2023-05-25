@@ -42,7 +42,7 @@
     color: var(--color-power);
     font-size: 5rem;
 
-    animation: purpose__animation_title_container_size_big 1s ease-in-out;
+    transition: transform 1s ease-in-out;
   }
 
   .purpose__title_container_size_big_effect {
@@ -55,7 +55,7 @@
     background-color: transparent;
     mix-blend-mode: difference;
 
-    animation: purpose__animation_title_container_size_big 1s ease-in-out;
+    transition: transform 1s ease-in-out;
   }
 }
 
@@ -70,7 +70,7 @@
     font-size: 1.5rem;
     color: var(--color-text-black);
 
-    animation: purpose___animation_text_container_value 1s ease-in-out;
+    transition: transform 1s ease-in-out;
   }
 }
 
@@ -93,24 +93,12 @@
   }
 }
 
-@keyframes purpose__animation_title_container_size_big {
-  0% {
-    transform: translateX(-100%);
-  }
-
-  100% {
-    transform: translateX(0%);
-  }
+.purpose__active-animation_title_container_size_big {
+  transform: translateX(-50%);
 }
 
-@keyframes purpose___animation_text_container_value {
-  0% {
-    transform: translateX(100%);
-  }
-
-  100% {
-    transform: translateX(0%);
-  }
+.purpose__animation_text_container_value {
+  transform: translateX(80%);
 }
 
 @media only screen and (max-width: 600px) {
@@ -118,6 +106,14 @@
     flex-direction: column;
     width: calc(100% - 32px);
     margin-left: 16px;
+  }
+
+  .purpose__active-animation_title_container_size_big {
+    transform: translateX(-40%);
+  }
+
+  .purpose__animation_text_container_value {
+    transform: translateX(40%);
   }
 
   .purpose__title_container_size_big {

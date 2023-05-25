@@ -52,7 +52,7 @@
     color: var(--color-complementary);
     font-size: 7rem;
 
-    animation: protheus-consultancy__animation_text 1s ease-in-out;
+    transition: transform 1s ease-in-out;
   }
 }
 
@@ -68,7 +68,7 @@
     font-size: 1.5rem;
     color: var(--color-text-white);
 
-    animation: protheus-consultancy__animation_text 1.25s ease-in-out;
+    transition: transform 1.25s ease-in-out;
   }
 }
 
@@ -90,27 +90,15 @@
   }
 }
 
-@keyframes protheus-consultancy__animation_text {
-  0% {
-    transform: translateX(-100%);
-  }
-
-  100% {
-    transform: translateX(0%);
-  }
-}
-
-@keyframes protheus-consultancy__animation_before {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 0.1;
-  }
+.protheus-consultancy__animation_text {
+  transform: translateX(-60%);
 }
 
 @media only screen and (max-width: 600px) {
+  .protheus-consultancy__animation_text {
+    transform: translateX(-40%);
+  }
+
   .protheus-consultancy__content {
     margin-left: 16px;
     width: calc(100% - 32px);

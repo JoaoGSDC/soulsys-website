@@ -31,7 +31,7 @@
       font-size: 5rem;
       width: fit-content;
 
-      animation: business-intelligence__animation_text 1s ease-in-out;
+      transition: transform 1s ease-in-out;
     }
   }
 
@@ -44,6 +44,7 @@
       margin: 0px;
       font-size: 1.5rem;
       color: var(--color-text-white);
+      transition: transform 1s ease-in-out;
     }
   }
 }
@@ -57,13 +58,14 @@
   display: flex;
   align-items: center;
 
-  animation: business-intelligence__figure 1s ease-in-out;
+  transition: transform 1s ease-in-out;
 
   .business-intelligence__struct-img__container_figure {
     height: calc(100vh - 200px);
     margin: 0px;
     margin-left: -25%;
-    animation: business-intelligence__figure 1.5s ease-in-out;
+
+    transition: transform 1.5s ease-in-out;
 
     .business-intelligence__struct-img__container_img {
       height: 100%;
@@ -90,24 +92,12 @@
   }
 }
 
-@keyframes business-intelligence__animation_text {
-  0% {
-    transform: translateX(-100%);
-  }
-
-  100% {
-    transform: translateX(0%);
-  }
+.business-intelligence__animation_text {
+  transform: translateX(-60%);
 }
 
-@keyframes business-intelligence__figure {
-  0% {
-    transform: translateX(100%);
-  }
-
-  100% {
-    transform: translateX(0%);
-  }
+.business-intelligence__animation_figure {
+  transform: translateX(40%);
 }
 
 @media only screen and (max-width: 600px) {
@@ -127,5 +117,13 @@
   .business-intelligence__text_container_value {
     width: 100% !important;
     font-size: 1.25rem !important;
+  }
+
+  .business-intelligence__animation_text {
+    transform: translateX(-40%);
+  }
+
+  .business-intelligence__animation_figure {
+    transform: translateX(0%);
   }
 }

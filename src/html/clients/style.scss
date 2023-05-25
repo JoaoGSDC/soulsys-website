@@ -46,7 +46,7 @@
       text-align: left;
       width: fit-content;
 
-      animation: clients__animation_title_container_size_big 1s ease-in-out;
+      transition: transform 1s ease-in-out;
     }
 
     &:before {
@@ -81,7 +81,7 @@
     margin-right: 16px;
     margin-bottom: 8px;
 
-    animation: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
 
     .clients__imgs-container_figure_img {
       width: 100%;
@@ -109,14 +109,8 @@
   }
 }
 
-@keyframes clients__animation_title_container_size_big {
-  0% {
-    transform: translateX(-100%);
-  }
-
-  100% {
-    transform: translateX(0%);
-  }
+.clients__animation_title_container_size_big {
+  transform: translateX(-60%);
 }
 
 @media only screen and (max-width: 600px) {

@@ -63,7 +63,7 @@
     font-size: 1.5rem;
     color: var(--color-text-white);
 
-    animation: web-solution__animation_text_container_value 1s ease-in-out;
+    transition: transform 1s ease-in-out;
   }
 }
 
@@ -101,7 +101,7 @@
   flex-direction: column;
   justify-content: space-between;
 
-  animation: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
 
   .web-solution__browser-container_bullets-container {
     display: flex;
@@ -161,17 +161,11 @@
   }
 }
 
-@keyframes web-solution__animation_text_container_value {
-  0% {
-    transform: translateX(100%);
-  }
-
-  100% {
-    transform: translateX(0%);
-  }
-}
-
 @media only screen and (max-width: 600px) {
+  .web-solution__animation_text_container_value {
+    transform: translateX(60%);
+  }
+
   .web-solution__content {
     margin-left: 16px;
   }

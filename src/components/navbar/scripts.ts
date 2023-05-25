@@ -12,7 +12,9 @@ export default function Navbar() {
       return
     }
 
-    navbar.classList.toggle("active")
+    toggleNav.addEventListener("click", function () {
+      navbar.classList.toggle("active")
+    })
   }
 
   function scrollToSection(e: any) {
@@ -51,11 +53,6 @@ export default function Navbar() {
     Locales.loadTranslations(newLanguage)
   }
 
-  function onClickEvents(e: any) {
-    handleToggleNavbar()
-    scrollToSection(e)
-  }
-
   function waitForNavbarLanguageButton() {
     const navbarLanguageButton = document.getElementById(
       "navbar__language-button",
@@ -72,7 +69,9 @@ export default function Navbar() {
   }
 
   waitForNavbarLanguageButton()
-  window.addEventListener("click", onClickEvents)
+
+  window.addEventListener("click", scrollToSection)
+  window.addEventListener("load", handleToggleNavbar)
 
   component.render("navbar")
 }
