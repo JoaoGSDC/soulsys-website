@@ -72,8 +72,12 @@ export default function Navbar() {
 
   window.addEventListener("click", scrollToSection)
   window.addEventListener("touchstart", scrollToSection)
-  window.addEventListener("touchstart", handleToggleNavbar)
-  window.addEventListener("load", handleToggleNavbar)
+
+  if (window.innerWidth <= 600) {
+    window.addEventListener("touchstart", handleToggleNavbar)
+  } else {
+    window.addEventListener("load", handleToggleNavbar)
+  }
 
   component.render("navbar")
 }
