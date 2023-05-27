@@ -70,6 +70,7 @@ export default function Navbar() {
 
   waitForNavbarLanguageButton()
 
+  window.addEventListener("click", scrollToSection)
   window.addEventListener("touchstart", scrollToSection)
   window.addEventListener("load", handleToggleNavbar)
 
