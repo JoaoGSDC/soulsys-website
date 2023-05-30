@@ -55,6 +55,12 @@
 
   .home__logo_container {
     left: 0px;
+    width: calc(100vw - 32px);
+    margin-left: 16px;
+
+    .home__logo_container_img {
+      width: 100% !important;
+    }
   }
 }
 
