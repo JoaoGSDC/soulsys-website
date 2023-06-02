@@ -2,7 +2,7 @@ import component from "../../ts/component"
 import Locales from "../../utils/locales"
 
 export default function Navbar() {
-  function handleScroll() {
+  /* function handleScroll() {
     const logoContainer = document.getElementById(
       "logocontainer",
     ) as HTMLElement
@@ -46,7 +46,7 @@ export default function Navbar() {
       logoContainer.style.top = `${top}%`
       logoContainer.style.transform = "translateY(0%)"
     }
-  }
+  } */
 
   function handleToggleNavbar() {
     const toggleNav = document.getElementsByClassName(
