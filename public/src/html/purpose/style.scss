@@ -50,8 +50,8 @@
     font-size: 5rem;
 
     color: #000;
-    -webkit-text-stroke: 0.5px #b9b9b9;
-    text-stroke: 0.5px #b9b9b9;
+    text-shadow: -1px -1px 0 #b9b9b9, 1px -1px 0 #b9b9b9, -1px 1px 0 #b9b9b9,
+      1px 1px 0 #b9b9b9;
     background-color: transparent;
     mix-blend-mode: difference;
 

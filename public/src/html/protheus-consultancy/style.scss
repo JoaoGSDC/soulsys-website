@@ -19,7 +19,8 @@
     color: rgb(0, 0, 0);
     background-color: transparent;
     mix-blend-mode: difference;
-    -webkit-text-stroke: 1px #ffb6b1;
+    text-shadow: -1px -1px 0 #a51d1d, 1px -1px 0 #b9b9b9, -1px 1px 0 #b9b9b9,
+      1px 1px 0 #b9b9b9;
     left: 50%;
     transform: translateX(-50%);
     top: -40px;
