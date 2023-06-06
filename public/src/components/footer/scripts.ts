@@ -1,24 +1,19 @@
 import component from "../../ts/component"
 
 export default function Footer() {
-  function scrollToSection(e: any) {
-    const { id } = e.target
-
-    if (
-      ![
-        "footer__start-button",
-        "footer__solutions-button",
-        "footer__contact-button",
-      ].includes(id)
-    ) {
-      return
-    }
+  function scrollToSection(e: MouseEvent) {
+    const { id } = e.target as HTMLButtonElement
 
     const sectionIds: any = {
       "footer__start-button": "#home",
       "footer__solutions-button": "#web-solution",
       "footer__contact-button": "#contact",
     }
+
+    if (!(id in sectionIds)) {
+      return
+    }
+
     const sectionId = sectionIds[id]
     const section = document.querySelector(sectionId)
 
