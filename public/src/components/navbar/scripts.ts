@@ -71,6 +71,10 @@ export default function Navbar() {
   waitForNavbarLanguageButton()
 
   window.addEventListener("scroll", () => {
+    if (window.innerWidth <= 600) {
+      return
+    }
+
     const nav = document.querySelector("nav") as HTMLElement
     const scrollPosition = window.scrollY
 
