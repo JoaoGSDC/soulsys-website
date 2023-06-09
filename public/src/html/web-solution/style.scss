@@ -8,6 +8,9 @@
   width: 100%;
 
   background-image: url("/src/assets/imgs/assets_effect.png");
+  background-position-x: right;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   &:before {
     content: "WEB";

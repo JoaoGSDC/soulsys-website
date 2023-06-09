@@ -9,6 +9,9 @@
 
   background-color: var(--color-background-gray);
   background-image: url("/src/assets/imgs/assets_effect.png");
+  background-position-x: right;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .clients__content {
@@ -70,18 +73,18 @@
   margin-left: 32px;
 
   .clients__imgs-container_figure {
-    height: 150px;
+    width: 200px;
     margin: 0px;
-
     flex: 1 0 40%;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    margin-right: 16px;
-    margin-bottom: 8px;
-
+    margin-right: 56px;
     transition: opacity 1s ease-in-out;
+
+    &:last-child {
+      margin-top: 32px;
+    }
 
     .clients__imgs-container_figure_img {
       width: 100%;

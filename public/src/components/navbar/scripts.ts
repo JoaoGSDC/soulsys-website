@@ -2,52 +2,6 @@ import component from "../../ts/component"
 import Locales from "../../utils/locales"
 
 export default function Navbar() {
-  /* function handleScroll() {
-    const logoContainer = document.getElementById(
-      "logocontainer",
-    ) as HTMLElement
-    const homeSection = document.getElementById("home") as HTMLElement
-
-    if (!logoContainer || !homeSection) {
-      return
-    }
-
-    const logoContainerHeight = logoContainer.offsetHeight
-    const homeSectionTop = homeSection.offsetTop
-    const homeSectionHeight = homeSection.offsetHeight
-
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop
-
-    if (scrollTop <= homeSectionTop) {
-      // Scroll está no topo
-      logoContainer.style.width = "600px"
-      logoContainer.style.top = "50%"
-      logoContainer.style.transform = "translateY(-50%)"
-    } else if (scrollTop <= homeSectionTop + homeSectionHeight / 2) {
-      // Scroll está na primeira metade da seção Home
-      const progress = (scrollTop - homeSectionTop) / (homeSectionHeight / 2)
-
-      const width = 600 + (1 - progress) * (logoContainerHeight - 600)
-      const top = 50 - progress * 50
-
-      logoContainer.style.width = `${width}px`
-      logoContainer.style.top = `${top}%`
-      logoContainer.style.transform = "translateY(-50%)"
-    } else {
-      // Scroll está na segunda metade da seção Home
-      const progress =
-        (scrollTop - (homeSectionTop + homeSectionHeight / 2)) /
-        (homeSectionHeight / 2)
-
-      const width = 600 + progress * (logoContainerHeight - 600)
-      const top = 0 - progress * 50
-
-      logoContainer.style.width = `${width}px`
-      logoContainer.style.top = `${top}%`
-      logoContainer.style.transform = "translateY(0%)"
-    }
-  } */
-
   function handleToggleNavbar() {
     const toggleNav = document.getElementsByClassName(
       "navbar__button-menu",
@@ -115,6 +69,38 @@ export default function Navbar() {
   }
 
   waitForNavbarLanguageButton()
+
+  window.addEventListener("scroll", () => {
+    const nav = document.querySelector("nav") as HTMLElement
+    const scrollPosition = window.scrollY
+
+    if (scrollPosition >= window.innerHeight) {
+      nav.classList.add("nav")
+
+      // Remove o sufixo "-w" dos atributos src das imagens
+      const images = document.querySelectorAll(".navbar__socialmedia")
+      images.forEach((image) => {
+        const originalSrc = image.getAttribute("src") as string
+        const newSrc = originalSrc.replace("-w.png", ".png")
+        image.setAttribute("src", newSrc)
+      })
+    } else {
+      nav.classList.remove("nav")
+
+      // Adiciona o sufixo "-w" aos atributos src das imagens
+      const images = document.querySelectorAll(".navbar__socialmedia")
+      images.forEach((image) => {
+        const originalSrc = image.getAttribute("src") as string
+
+        if (originalSrc.includes("-w.png")) {
+          return
+        }
+
+        const newSrc = originalSrc.replace(".png", "-w.png")
+        image.setAttribute("src", newSrc)
+      })
+    }
+  })
 
   window.addEventListener("click", scrollToSection)
   window.addEventListener("touchstart", scrollToSection)
